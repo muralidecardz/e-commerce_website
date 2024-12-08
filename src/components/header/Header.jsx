@@ -3,9 +3,14 @@ import "./Header.css";
 
 const Header = ({ brandName, cartCount, openCartModal }) => {
   const [showAboutDialog, setShowAboutDialog] = useState(false);
+  const [showSignUpDialog, setShowSignUpDialog] = useState(false);
 
   const toggleAboutDialog = () => {
     setShowAboutDialog(!showAboutDialog);
+  };
+
+  const toggleSignUpDialog = () => {
+    setShowSignUpDialog(!showSignUpDialog);
   };
 
   return (
@@ -21,6 +26,11 @@ const Header = ({ brandName, cartCount, openCartModal }) => {
           <li>
             <a href="#!" onClick={toggleAboutDialog}>
               About
+            </a>
+          </li>
+          <li>
+            <a href="#!" onClick={toggleSignUpDialog}>
+              Sign Up
             </a>
           </li>
         </ul>
@@ -55,6 +65,35 @@ const Header = ({ brandName, cartCount, openCartModal }) => {
             <button className="about-dialog__close" onClick={toggleAboutDialog}>
               Close
             </button>
+          </div>
+        </div>
+      )}
+
+      {/* Sign Up Dialog */}
+      {showSignUpDialog && (
+        <div className="signup-dialog">
+          <div className="signup-dialog__content">
+            <h2>Sign Up</h2>
+            <form>
+              <label>
+                E-mail:
+                <input type="email" name="email" required />
+              </label>
+              <label>
+                Name:
+                <input type="text" name="name" required />
+              </label>
+              <label>
+                Phone No:
+                <input type="tel" name="phone" required />
+              </label>
+              <div className="signup-dialog__actions">
+                <button type="submit">Submit</button>
+                <button type="button" onClick={toggleSignUpDialog}>
+                  Cancel
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       )}

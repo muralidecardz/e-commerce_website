@@ -36,16 +36,11 @@ const Header = ({ brandName, cartCount, openCartModal }) => {
         </ul>
       </nav>
       <div className="header__cart">
-        <a
-          href="#!"
-          className="cart-icon"
-          onClick={openCartModal} // Trigger the modal to open
-        >
+        <a href="#!" className="cart-icon" onClick={openCartModal}>
           🛒 <span className="cart-count">{cartCount}</span>
         </a>
       </div>
 
-      {/* About Dialog */}
       {showAboutDialog && (
         <div className="about-dialog">
           <div className="about-dialog__content">
@@ -69,7 +64,6 @@ const Header = ({ brandName, cartCount, openCartModal }) => {
         </div>
       )}
 
-      {/* Sign Up Dialog */}
       {showSignUpDialog && (
         <div className="signup-dialog">
           <div className="signup-dialog__content">

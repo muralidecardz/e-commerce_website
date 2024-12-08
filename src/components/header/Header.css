@@ -45,21 +45,20 @@
   padding: 2px 8px;
   font-size: 14px;
 }
-/* General styles for the dialog overlay */
+
 .signup-dialog {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
 }
 
-/* Styles for the dialog content */
 .signup-dialog__content {
   background: #ffffff;
   padding: 20px;
@@ -70,14 +69,12 @@
   text-align: center;
 }
 
-/* Heading style */
 .signup-dialog__content h2 {
   margin-bottom: 20px;
   color: #333;
   font-size: 24px;
 }
 
-/* Form labels and inputs */
 .signup-dialog__content label {
   display: block;
   margin: 10px 0 5px;
@@ -95,7 +92,6 @@
   font-size: 16px;
 }
 
-/* Action buttons */
 .signup-dialog__actions {
   display: flex;
   justify-content: space-between;
@@ -119,12 +115,10 @@
   color: white;
 }
 
-/* Add hover effects for buttons */
 .signup-dialog__actions button:hover {
   opacity: 0.9;
 }
 
-/* Responsive adjustments */
 @media (max-width: 500px) {
   .signup-dialog__content {
     width: 90%;

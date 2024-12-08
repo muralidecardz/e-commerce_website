@@ -1,4 +1,3 @@
-/* Form Group Styling */
 .form-group {
   margin-bottom: 15px;
 }
@@ -23,9 +22,8 @@
   min-height: 80px;
 }
 
-/* Button Styling */
 .checkout-confirm-button {
-  background-color: #4caf50; /* Green */
+  background-color: #4caf50;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -43,7 +41,7 @@
 }
 
 .modal-footer button:first-child {
-  background-color: #f44336; /* Red for Close */
+  background-color: #f44336;
   color: white;
 }
 

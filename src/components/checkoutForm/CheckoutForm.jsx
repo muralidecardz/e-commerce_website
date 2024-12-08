@@ -15,7 +15,6 @@ function CheckoutForm(props) {
           </button>
         </div>
         <form className="modal-checkout-details" onSubmit={placeOrder}>
-          {/* Billing Details Form */}
           <div className="form-group">
             <label htmlFor="name">Full Name:</label>
             <input

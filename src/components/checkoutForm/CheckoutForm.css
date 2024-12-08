@@ -1,0 +1,52 @@
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Button Styling */
+.checkout-confirm-button {
+  background-color: #4caf50; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.checkout-confirm-button:hover {
+  background-color: #388e3c;
+}
+
+.modal-footer button {
+  margin-left: 10px;
+}
+
+.modal-footer button:first-child {
+  background-color: #f44336; /* Red for Close */
+  color: white;
+}
+
+.modal-footer button:first-child:hover {
+  background-color: #d32f2f;
+}

@@ -1,0 +1,308 @@
+/* Modal Styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-images img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+/* Cart Total */
+.cart-total {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card-skeleton {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 15px;
+  width: 220px;
+  margin: 10px;
+}
+
+/* Cart Modal styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Darker background for better visibility */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 700px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #888;
+}
+
+.modal-close:hover {
+  color: #333;
+}
+
+.modal-items {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.modal-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.modal-item:last-child {
+  border-bottom: none;
+}
+
+.modal-item img {
+  max-width: 60px;
+  max-height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.modal-item-details {
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+.modal-item-details h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.modal-item-details p {
+  margin: 5px 0;
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.modal-item-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-item-actions button {
+  padding: 5px 15px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-item-actions button:hover {
+  background-color: #0056b3;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.modal-footer h3 {
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.modal-footer button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-footer button:hover {
+  background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .modal-item img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  .modal-header h2 {
+    font-size: 1.25rem;
+  }
+
+  .modal-footer h3 {
+    font-size: 1rem;
+  }
+
+  .modal-footer button {
+    font-size: 0.875rem;
+  }
+}
+
+/* General Button Styles */
+button {
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Buttons in Cart Modal */
+.modal-item-actions button {
+  background-color: #f44336; /* Red for "-" button */
+  color: white;
+}
+
+.modal-item-actions button:hover {
+  background-color: #d32f2f;
+}
+
+.modal-item-actions button + button {
+  background-color: #4caf50; /* Green for "+" button */
+  margin-left: 10px;
+}
+
+.modal-item-actions button + button:hover {
+  background-color: #388e3c;
+}
+
+/* Close button in cart modal */
+.modal-close {
+  background: #f0f0f0;
+  color: #333;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  background: #ffebee;
+  border-color: #f44336;
+}
+
+/* Footer Close button */
+.modal-footer button {
+  background-color: #007bff; /* Blue for "Close" button */
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.modal-footer button:hover {
+  background-color: #0056b3;
+}
+
+.modal-footer h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
